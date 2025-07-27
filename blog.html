@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Messages – Living Word of Life</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .sidebar-img {
+      object-fit: cover;
+      max-width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="p-6 bg-blue-700 text-white">
+    <h1 class="text-3xl font-bold">Living Word of Life</h1>
+    <nav class="mt-2">
+      <a href="index.html" class="mr-4">Home</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+  <div class="p-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+    <aside class="md:col-span-1">
+      <img src="img/gramma.jpg" alt="Gramma" class="sidebar-img" />
+      <p class="mt-4 text-center font-medium">With love, Gramma</p>
+    </aside>
+    <main class="md:col-span-3">
+      <div id="posts" class="space-y-6"></div>
+      <div class="flex justify-between mt-8" id="pagination">
+        <button id="prevBtn" class="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400">Previous</button>
+        <button id="nextBtn" class="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400">Next</button>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
