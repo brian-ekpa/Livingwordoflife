@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Messages – Living Word of Life</title>
+  <title>Living Word of Life - Blog</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .sidebar-img {
-      object-fit: cover;
-      max-width: 100%;
-      border-radius: 1rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-  </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
   <header class="p-6 bg-blue-700 text-white">
@@ -21,20 +12,44 @@
       <a href="index.html" class="mr-4">Home</a>
       <a href="blog.html">Blog</a>
     </nav>
-  </header>
-  <div class="p-6 grid grid-cols-1 md:grid-cols-4 gap-6">
-    <aside class="md:col-span-1">
-      <img src="img/gramma.jpg" alt="Gramma" class="sidebar-img" />
-      <p class="mt-4 text-center font-medium">With love, Gramma</p>
-    </aside>
-    <main class="md:col-span-3">
-      <div id="posts" class="space-y-6"></div>
-      <div class="flex justify-between mt-8" id="pagination">
-        <button id="prevBtn" class="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400">Previous</button>
-        <button id="nextBtn" class="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400">Next</button>
-      </div>
-    </main>
+  </header>  <!-- Main layout with Gramma's photo and blog posts -->  <div class="flex flex-col md:flex-row gap-8 max-w-5xl mx-auto p-6"><!-- Gramma's Photo Section -->
+<aside class="md:w-1/4 text-center">
+  <img src="img/gramma.jpg" alt="Gramma" class="w-24 h-24 rounded-full object-cover shadow-md mb-2 mx-auto" />
+  <p class="text-gray-700 font-semibold">Gramma</p>
+</aside>
+
+<!-- Blog Posts Section -->
+<main class="md:w-3/4">
+  <h2 class="text-2xl font-bold mb-4">Latest Messages</h2>
+
+  <!-- Blog Post Previews -->
+  <div class="space-y-6">
+    <div class="border-b pb-4">
+      <h3 class="text-xl font-semibold">God’s Love Never Fails</h3>
+      <p class="text-gray-700">No matter what you've done, God’s love remains... </p>
+      <a href="posts/gods-love.html" class="text-blue-600 hover:underline">Read more</a>
+    </div>
+
+    <div class="border-b pb-4">
+      <h3 class="text-xl font-semibold">Faith Over Fear</h3>
+      <p class="text-gray-700">Fear is real, but faith is stronger... </p>
+      <a href="posts/faith-over-fear.html" class="text-blue-600 hover:underline">Read more</a>
+    </div>
+
+    <div class="border-b pb-4">
+      <h3 class="text-xl font-semibold">He is Risen!</h3>
+      <p class="text-gray-700">The tomb is empty — Jesus has conquered death... </p>
+      <a href="posts/he-is-risen.html" class="text-blue-600 hover:underline">Read more</a>
+    </div>
   </div>
-  <script src="main.js"></script>
+
+  <!-- Pagination Buttons -->
+  <div class="flex justify-between mt-8">
+    <a href="#" class="text-blue-600 hover:underline">&larr; Previous</a>
+    <a href="#" class="text-blue-600 hover:underline">Next &rarr;</a>
+  </div>
+</main>
+
+  </div>
 </body>
 </html>
